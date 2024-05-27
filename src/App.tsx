@@ -1,10 +1,12 @@
-import { grid } from 'styled-system';
+import { grid } from '../styled-system/patterns';
+import { container } from '../styled-system/patterns';
 import Card from './components/Card/Card';
 // Setup
 import { createBoard } from './setup';
 // Types
 import { CardType } from './setup';
 import React from "react";
+import "../styled-system/styles.css"
 
 
 const App = () => {
