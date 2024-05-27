@@ -15,7 +15,7 @@ const App = () => {
   const [clickedCard, setClickedCard] = React.useState<undefined | CardType>(undefined);
 
   const gameWon = matchedPairs === cards.length / 2;
-
+  console.log(gameWon);
   const handleCardclick = (currentClickedCard: CardType) => {
     // Flip the clicked card
     setCards(prev => prev.map(card => (card.id === currentClickedCard.id ? { ...card, flipped: true } : card)));
